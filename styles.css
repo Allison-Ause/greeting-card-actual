@@ -28,3 +28,69 @@ footer {
     justify-content: flex-end;
     background-color: var(--footer-background);
 }
+
+#container {
+    display: grid;
+    justify-items: center;
+}
+
+#inputs {
+    width: 100%;
+    max-width: 450px;
+}
+
+label, input, select, textarea {
+    display: block;
+    margin-bottom: 15px; 
+    width: 100%;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+textarea {
+    height: 100px;
+}
+
+input, select {
+    height: 35px;
+    font-size: 1rem;
+}
+
+
+#card {
+    text-align: center;
+    width: 400px;
+    padding: 15px;
+}
+
+#card h2 {
+    font-size: 2.5rem;
+    margin: 0 0 20px 0;
+}
+
+#card img {
+    width: 350px;
+}
+
+.mystic {
+    background: rgb(0, 180, 252);
+    color: rgb(0, 20, 73);
+    border: 5px solid rgb(1, 38, 119);
+    font-size: 1.5rem;
+    font-family: 'Courgette', cursive;
+}
+
+.dark {
+    background: rgb(121, 41, 41);
+    color: whitesmoke;
+    border: 10px transparent rgb(49, 48, 47);
+}
+
+.sacral {
+    background: rgb(234, 176, 94);
+    color: rgb(253, 238, 205);
+    border: 5px dotted rgb(234, 124, 118);
+    font-family: 'Source Sans Pro', sans-serif;
+}

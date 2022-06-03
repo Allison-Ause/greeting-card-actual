@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<style>@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+    </style>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+    </style>
+    
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -43,10 +50,21 @@
                 </select>
 
                 <button id="export-button">Create Card</button>
+            </section>
 
-    </section>
+                <article id="card" class="mystic">
+                    <h2 id="name-header">Challenge</h2>
+                    <img id="icon-image" src="assets/mountain.jpeg">
+                    <p id="description-display">
+                        No obstacle is impossible to overcome, though it may loom large before you. Don't be daunted by the incline ahead — lean in and you will be rewarded.
+                    </p>
+                </article>
+    
     </div>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/dom-to-image@2.6.0/src/dom-to-image.min.js"></script>
+    <script src="app.js" type="module"></script>
 
     <footer>&copy;2021 Aspiring Software Developer</footer>
 
