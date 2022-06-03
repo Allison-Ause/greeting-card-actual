@@ -11,6 +11,9 @@ const descriptionDisplay = document.getElementById('description-display');
 const themeSelect = document.getElementById('theme-select');
 const card = document.getElementById('card');
 
+const exportButton = document.getElementById('export-button');
+
+
 // set event listeners
     // get info from user input
     // use user input to update state
@@ -32,4 +35,12 @@ descriptionTextArea.addEventListener('input', () => {
 themeSelect.addEventListener('change', () => {
     card.classList.value = '';
     card.classList.add(themeSelect.value);
+});
+
+exportButton.addEventListener('click', async () => {
+    const dataUrl = await domtoimage.toPng(card);
+    const link = document.createElement('a');
+    link.download = nameInput.value + '.png';
+    link.href = dataUrl;
+    link.click();
 });
