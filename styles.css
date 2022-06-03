@@ -86,6 +86,7 @@ input, select {
     background: rgb(121, 41, 41);
     color: whitesmoke;
     border: 10px transparent rgb(49, 48, 47);
+    font-family: 'Creepster', cursive;
 }
 
 .sacral {
