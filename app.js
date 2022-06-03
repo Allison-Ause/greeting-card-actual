@@ -8,6 +8,9 @@ const iconDisplay = document.getElementById('icon-display');
 const descriptionTextArea = document.getElementById('description-textarea');
 const descriptionDisplay = document.getElementById('description-display');
 
+const themeSelect = document.getElementById('theme-select');
+const card = document.getElementById('card');
+
 // set event listeners
     // get info from user input
     // use user input to update state
@@ -24,4 +27,9 @@ iconSelect.addEventListener('change', () => {
 
 descriptionTextArea.addEventListener('input', () => {
     descriptionDisplay.textContent = descriptionTextArea.value;
+});
+
+themeSelect.addEventListener('change', () => {
+    card.classList.value = '';
+    card.classList.add(themeSelect.value);
 });
