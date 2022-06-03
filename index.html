@@ -16,7 +16,36 @@
     </header>
 
     <main>
+        <h1>Oracle Deck Builder</h1>
 
+    <div id="container">
+        <section id="inputs">
+            <label>
+                Card Name: <input id="name-input" value="Challenge">
+            </label>
+
+            <label>Resonant Icon:</label>
+            <select id="icon-select">
+                <option value="mountain.jpeg" selected>Mountain</option>
+                <option value="snake.webp">Snake</option>
+                <option value="moon.jpeg">Star</option>
+                <option value="enlightenment.webp">Gemstone</option>
+            </select>
+        
+            <label for="description-textarea">Meaning and Themes</label>
+            <textarea id="description-textarea">No obstacle is impossible to overcome, though it may loom large before you. Don't be daunted by the incline ahead — lean in and you will be rewarded.</textarea>
+
+                <label for="theme-select">Aura</label>
+                <select id="theme-select">
+                    <option value="mystic" selected>Mystic</option>
+                    <option value="dark">Dark</option>
+                    <option value="sacral">Sacral</option>
+                </select>
+
+                <button id="export-button">Create Card</button>
+
+    </section>
+    </div>
     </main>
 
     <footer>&copy;2021 Aspiring Software Developer</footer>
