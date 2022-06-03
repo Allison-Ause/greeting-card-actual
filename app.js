@@ -45,7 +45,7 @@ generateNumber.addEventListener('click', () => {
     numberDisplay.textContent = randomNumber;
 });
 
-exportButton.addEventListener('click', async () => {
+exportButton.addEventListener('click', async() => {
     const dataUrl = await domtoimage.toPng(card);
     const link = document.createElement('a');
     link.download = nameInput.value + '.png';
