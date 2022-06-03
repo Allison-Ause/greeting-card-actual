@@ -11,6 +11,9 @@ const descriptionDisplay = document.getElementById('description-display');
 const themeSelect = document.getElementById('theme-select');
 const card = document.getElementById('card');
 
+const generateNumber = document.getElementById('generate-number');
+const numberDisplay = document.getElementById('number-display');
+
 const exportButton = document.getElementById('export-button');
 
 
@@ -35,6 +38,11 @@ descriptionTextArea.addEventListener('input', () => {
 themeSelect.addEventListener('change', () => {
     card.classList.value = '';
     card.classList.add(themeSelect.value);
+});
+
+generateNumber.addEventListener('click', () => {
+    const randomNumber = Math.floor(Math.random() * 50);
+    numberDisplay.textContent = randomNumber;
 });
 
 exportButton.addEventListener('click', async () => {

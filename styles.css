@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Source+Sans+Pro:wght@300&display=swap');
 
 :root {
     --background: rgb(224, 234, 247);
@@ -34,9 +37,26 @@ footer {
     justify-items: center;
 }
 
+@media (min-width: 400px) {
+    #container {
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        grid-gap: 10px;
+    }
+}
+
 #inputs {
     width: 100%;
     max-width: 450px;
+}
+
+#generate-number {
+    background-color:rgb(93, 227, 218);
+    border-radius: 5%;
+    padding: 15px;
+    border: 8px dotted whitesmoke;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1rem;
 }
 
 label, input, select, textarea {
@@ -63,6 +83,7 @@ input, select {
     text-align: center;
     width: 400px;
     padding: 15px;
+    border-radius: 5%;
 }
 
 #card h2 {
@@ -72,6 +93,7 @@ input, select {
 
 #card img {
     width: 350px;
+    border-radius: 5px;
 }
 
 .mystic {
@@ -87,11 +109,13 @@ input, select {
     color: whitesmoke;
     border: 10px transparent rgb(49, 48, 47);
     font-family: 'Creepster', cursive;
+    font-size: 1rem;
 }
 
 .sacral {
     background: rgb(234, 176, 94);
     color: rgb(253, 238, 205);
-    border: 5px dotted rgb(234, 124, 118);
+    border: 10px dotted rgb(234, 124, 118);
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.25rem;
 }
