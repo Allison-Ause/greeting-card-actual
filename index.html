@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Web UI Project</title>
+    <title>Embody Your Spirit</title>
 </head>
 
 <body>
@@ -16,8 +17,54 @@
     </header>
 
     <main>
+        <h1>Oracle Deck Builder</h1>
 
+    <div id="container">
+        <section id="inputs">
+            <label>
+                Card Name: <input id="name-input" value="Challenge">
+            </label>
+
+            <label>Resonant Icon:</label>
+            <select id="icon-select">
+                <option value="mountain.jpeg" selected>Mountain</option>
+                <option value="snake.webp">Snake</option>
+                <option value="moon.jpeg">Star</option>
+                <option value="enlightenment.webp">Gemstone</option>
+            </select>
+        
+            <label for="description-textarea">Meaning and Themes</label>
+            <textarea id="description-textarea">No obstacle is impossible to overcome, though it may loom large before you. Don't be daunted by the incline ahead — lean in and you will be rewarded.</textarea>
+
+                <label for="theme-select">Aura</label>
+                <select id="theme-select">
+                    <option value="mystic" selected>Mystic</option>
+                    <option value="dark">Dark</option>
+                    <option value="sacral">Sacral</option>
+                </select>
+
+                <p>
+                <button id="generate-number">Intuit Magic Number</button>
+                </p>
+
+                <button id="export-button">Create Card</button>
+            </section>
+
+                <article id="card" class="mystic">
+                    <h2 id="name-header">Challenge</h2>
+                    <img id="icon-display" src="assets/mountain.jpeg">
+                    <p id="description-display">
+                        No obstacle is impossible to overcome, though it may loom large before you. Don't be daunted by the incline ahead — lean in and you will be rewarded.
+                    </p>
+                    <h4>Magic Number: </h4>
+                    <p id="number-display"> ? </p>
+                </article>
+    
+    </div>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/dom-to-image@2.6.0/src/dom-to-image.min.js"></script>
+    <script src="app.js" type="module"></script>
 
     <footer>&copy;2021 Aspiring Software Developer</footer>
 

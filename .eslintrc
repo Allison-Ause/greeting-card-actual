@@ -15,7 +15,8 @@
   },
   "globals": {
     "QUnit": false,
-    "supabase": false
+    "supabase": false,
+    "domtoimage": false
   },
   "rules": {
     "eqeqeq": ["error", "always"],
@@ -54,7 +55,7 @@
     "space-infix-ops": "error",
     "object-curly-spacing": ["error", "always"],
     "comma-spacing": "error",
-    "space-before-function-paren": ["error", "never"],
+    "space-before-function-paren": ["off"],
     "keyword-spacing": [
       "error",
       {
