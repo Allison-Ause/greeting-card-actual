@@ -1,4 +1,7 @@
 // grab DOM elements
+
+// IF I UPDATE THIS, WILL IT CHANGE THE DEV BRANCH?!
+
 const nameInput = document.getElementById('name-input');
 const nameHeader = document.getElementById('name-header');
 
